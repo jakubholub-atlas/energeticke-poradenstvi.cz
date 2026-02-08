@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Poradna | Energetické poradenství</title>
+  <meta name="description" content="Energetická poradna: nejčastější otázky, tipy, průvodce spotřebou, smlouvami, fixacemi a riziky." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html"><span class="logo"></span><span>Energetické poradenství</span></a>
+        <div class="navlinks">
+          <a data-nav href="sluzby.html">Služby</a>
+          <a data-nav href="kalkulacky.html">Kalkulačky</a>
+          <a data-nav href="srovnani.html">Srovnání</a>
+          <a data-nav href="poradna.html">Poradna</a>
+          <a data-nav href="kontakt.html">Kontakt</a>
+          <span class="badge">CZ</span>
+          <a class="badge" href="en/advice.html">EN →</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="h-title" style="font-size:34px;margin-top:8px;">Poradna</h1>
+      <p class="h-sub">Nejčastější témata a otázky. Obsah můžete průběžně rozšiřovat.</p>
+
+      <div class="grid3">
+        <div class="feature">
+          <div class="icon">❓</div>
+          <b>Jak zjistím spotřebu?</b>
+          <p>Najdete ji na vyúčtování. U elektřiny často VT/NT, u plynu m³ a přepočet na kWh.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🧾</div>
+          <b>Na co koukat ve smlouvě?</b>
+          <p>Fixace, výpověď, sankce, automatické prodlužování, stálé platby a ceníky.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🔁</div>
+          <b>Kdy má smysl změna dodavatele?</b>
+          <p>Když úspora převýší rizika (sankce) a máte srovnané všechny složky ceny.</p>
+        </div>
+      </div>
+
+      <div class="card pad" style="margin-top:16px;">
+        <h2 style="margin-top:0">Co poslat, aby šlo poradit rychle</h2>
+        <p class="small">
+          Pro přesnější srovnání pomůže: typ odběru (domácnost/firma), elektřina/plyn, roční spotřeba,
+          distribuční sazba, region a informace o fixaci (kdy končí, zda je sankce).
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="kontakt.html">Napsat dotaz</a>
+          <a class="btn" href="kalkulacky.html">Kalkulačky</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© <span id="y"></span> Energetické poradenství • <a href="mailto:info@enpo.cz">info@enpo.cz</a></div>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
