@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Energetické poradenství | Váš osobní rádce ve světě energií</title>
+  <meta name="description" content="Komplexní energetické poradenství: kalkulačky, srovnání, výpočty, poradna a prodej energií. Moderně a srozumitelně." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <span class="logo" aria-hidden="true"></span>
+          <span>Energetické poradenství</span>
+        </a>
+        <div class="navlinks">
+          <a data-nav href="sluzby.html">Služby</a>
+          <a data-nav href="kalkulacky.html">Kalkulačky</a>
+          <a data-nav href="srovnani.html">Srovnání</a>
+          <a data-nav href="poradna.html">Poradna</a>
+          <a data-nav href="kontakt.html">Kontakt</a>
+          <span class="badge">CZ</span>
+          <a class="badge" href="en/index.html" title="English version">EN →</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <h1 class="h-title">Váš osobní rádce ve světě energetiky</h1>
+            <p class="h-sub">
+              Energetické poradenství pro domácnosti i firmy: <b>komplexní poradenství</b>, praktické <b>výpočty</b>, <b>kalkulačky</b>,
+              <b>srovnání</b> nabídek a pomoc s orientací v cenách, tarifech a smlouvách.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="kontakt.html">Napsat dotaz</a>
+              <a class="btn" href="kalkulacky.html">Spustit kalkulačky</a>
+              <a class="btn" href="srovnani.html">Porovnat nabídky</a>
+            </div>
+
+            <div class="kpis">
+              <div class="kpi">
+                <div class="n">Rychle</div>
+                <div class="t">srozumitelný výstup</div>
+              </div>
+              <div class="kpi">
+                <div class="n">Komplexně</div>
+                <div class="t">od smluv po úspory</div>
+              </div>
+              <div class="kpi">
+                <div class="n">Prakticky</div>
+                <div class="t">kalkulace a porovnání</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="card pad">
+            <h3>Co tu najdete</h3>
+            <p class="small">
+              • Energetická poradna a konzultace<br/>
+              • Výpočty spotřeby a nákladů<br/>
+              • Srovnání dodavatelů a produktů<br/>
+              • Poradna (FAQ) a průvodce smlouvami<br/>
+              • Prodej energií (transparentně a srozumitelně)
+            </p>
+            <hr class="sep"/>
+            <div class="pill">✅ Transparentní přístup</div>
+            <div class="pill" style="margin-top:8px;">🧮 Kalkulačky pro rychlou orientaci</div>
+            <div class="pill" style="margin-top:8px;">🧾 Kontrola smluv a rizik</div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Jak vám pomůžeme</h2>
+        <div class="grid3">
+          <div class="feature">
+            <div class="icon">⚡</div>
+            <b>Komplexní poradenství</b>
+            <p>Domácnosti i firmy: ceny, tarify, fixace, smluvní podmínky, odhad dopadů.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">🧮</div>
+            <b>Kalkulačky a výpočty</b>
+            <p>Rychlé orientační propočty nákladů, srozumitelné výstupy a další kroky.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">🛡️</div>
+            <b>Srovnání a rizika</b>
+            <p>Upozornění na “háčky” smluv, sankce, stálé platby a podmínky dodavatelů.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card pad">
+          <h2 style="margin-top:0">Rychlý start</h2>
+          <p class="small">
+            Nevíte, kde začít? Odpovězte si na 3 otázky: (1) domácnost nebo firma, (2) elektřina, plyn nebo obojí,
+            (3) znáte roční spotřebu v kWh / m³? Pak už zvládneme zbytek.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="poradna.html">Otevřít poradnu</a>
+            <a class="btn" href="kontakt.html">Kontaktovat emailem</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="y"></span> Energetické poradenství</div>
+        <div class="pill">📩 <a href="mailto:info@enpo.cz"><b>info@enpo.cz</b></a></div>
+      </div>
+      <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+    </div>
+  </footer>
+</body>
+</html>
