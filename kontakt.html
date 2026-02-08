@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontakt | Energetické poradenství</title>
+  <meta name="description" content="Kontakt na energetické poradenství. Napište nám email a přidejte spotřebu a údaje ze smlouvy pro rychlejší odpověď." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html"><span class="logo"></span><span>Energetické poradenství</span></a>
+        <div class="navlinks">
+          <a data-nav href="sluzby.html">Služby</a>
+          <a data-nav href="kalkulacky.html">Kalkulačky</a>
+          <a data-nav href="srovnani.html">Srovnání</a>
+          <a data-nav href="poradna.html">Poradna</a>
+          <a data-nav href="kontakt.html">Kontakt</a>
+          <span class="badge">CZ</span>
+          <a class="badge" href="en/contact.html">EN →</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="h-title" style="font-size:34px;margin-top:8px;">Kontakt</h1>
+      <p class="h-sub">Napište nám email. Ideálně připojte spotřebu a typ odběru — urychlí to odpověď.</p>
+
+      <div class="card pad">
+        <h2 style="margin-top:0">Email</h2>
+        <p class="small">Email pro dotazy: <b>info@enpo.cz</b></p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="mailto:info@enpo.cz?subject=Dotaz%20-%20Energeticke%20poradenstvi&body=Dobr%C3%BD%20den%2C%0A%0Apros%C3%ADm%20o%20energetick%C3%A9%20poradenstv%C3%AD%3A%0A-%20Dom%C3%A1cnost%20nebo%20firma%3A%20%0A-%20Elekt%C5%99ina%2Fplyn%3A%20%0A-%20Ro%C4%8Dn%C3%AD%20spot%C5%99eba%3A%20%0A-%20Tarif%2Fdistribu%C4%8Dn%C3%AD%20sazba%3A%20%0A-%20Fixace%2Fsmlouva%3A%20%0A%0AD%C4%9Bkuji%2C">
+            Napsat email
+          </a>
+          <a class="btn" href="poradna.html">Co poslat za údaje</a>
+        </div>
+
+        <hr class="sep"/>
+
+        <h3>Kontaktní formulář (volitelné)</h3>
+        <p class="small">
+          Pokud chcete formulář bez backendu, můžete zdarma použít Formspree nebo Netlify Forms.
+          Níže je šablona pro Formspree — stačí vložit váš endpoint.
+        </p>
+
+        <form class="form" action="https://formspree.io/f/TVUJ_KOD" method="POST">
+          <input class="input" name="name" placeholder="Jméno" />
+          <input class="input" name="email" type="email" placeholder="Email" required />
+          <textarea name="message" placeholder="Zpráva (spotřeba, tarif, fixace…)" required></textarea>
+          <button class="btn primary" type="submit">Odeslat</button>
+          <p class="hint">Pozn.: nahraďte <b>TVUJ_KOD</b> vaším Formspree kódem, jinak formulář nebude fungovat.</p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© <span id="y"></span> Energetické poradenství • <a href="mailto:info@enpo.cz">info@enpo.cz</a></div>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
