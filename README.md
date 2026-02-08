@@ -1,1 +1,0 @@
-# energeticke-poradenstvi.cz
