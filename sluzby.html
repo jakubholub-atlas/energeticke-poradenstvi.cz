@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Služby | Energetické poradenství</title>
+  <meta name="description" content="Služby energetického poradenství: kontrola smluv, optimalizace nákladů, kalkulace, srovnání a poradenství pro domácnosti i firmy." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html"><span class="logo"></span><span>Energetické poradenství</span></a>
+        <div class="navlinks">
+          <a data-nav href="sluzby.html">Služby</a>
+          <a data-nav href="kalkulacky.html">Kalkulačky</a>
+          <a data-nav href="srovnani.html">Srovnání</a>
+          <a data-nav href="poradna.html">Poradna</a>
+          <a data-nav href="kontakt.html">Kontakt</a>
+          <span class="badge">CZ</span>
+          <a class="badge" href="en/services.html">EN →</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="h-title" style="font-size:34px;margin-top:8px;">Služby</h1>
+      <p class="h-sub">Vyberte, s čím potřebujete pomoct. Vše je orientační a vysvětlené jednoduše.</p>
+
+      <div class="grid3">
+        <div class="feature">
+          <div class="icon">🧾</div>
+          <b>Kontrola smluv</b>
+          <p>Výpovědní lhůty, sankce, fixace, stálé platby, ceníky a dodatky.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">📉</div>
+          <b>Optimalizace nákladů</b>
+          <p>Odhad úspor, nastavení tarifu/distribuce, prevence zbytečných poplatků.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🏠</div>
+          <b>Domácnosti</b>
+          <p>Elektřina/plyn: přehledně, bez marketingových mlh.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🏭</div>
+          <b>Firmy</b>
+          <p>Profil spotřeby, špičky, odhad dopadů změn a rámcové srovnání.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🧮</div>
+          <b>Výpočty a modely</b>
+          <p>Modelování nákladů podle spotřeby, ceny za kWh, období a scénářů.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🤝</div>
+          <b>Prodej / zprostředkování energií</b>
+          <p>Transparentní vysvětlení podmínek a férové porovnání variant dle situace.</p>
+        </div>
+      </div>
+
+      <div class="card pad" style="margin-top:16px;">
+        <h2 style="margin:0 0 10px;">Jak probíhá spolupráce</h2>
+        <ol class="small" style="margin:0; line-height:1.8;">
+          <li>Pošlete dotaz (ideálně spotřebu a typ odběru).</li>
+          <li>Dostanete orientační porovnání a doporučení kroků.</li>
+          <li>Společně ověříme rizika (smlouva, fixace, sankce, poplatky).</li>
+        </ol>
+        <div class="cta-row" style="margin-top:12px;">
+          <a class="btn primary" href="kontakt.html">Napsat dotaz</a>
+          <a class="btn" href="kalkulacky.html">Kalkulačky</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© <span id="y"></span> Energetické poradenství • <a href="mailto:info@enpo.cz">info@enpo.cz</a></div>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
