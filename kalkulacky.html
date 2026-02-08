@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kalkulačky | Energetické poradenství</title>
+  <meta name="description" content="Kalkulačky a orientační výpočty nákladů na energie. Rychlá orientace pro domácnosti i firmy." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html"><span class="logo"></span><span>Energetické poradenství</span></a>
+        <div class="navlinks">
+          <a data-nav href="sluzby.html">Služby</a>
+          <a data-nav href="kalkulacky.html">Kalkulačky</a>
+          <a data-nav href="srovnani.html">Srovnání</a>
+          <a data-nav href="poradna.html">Poradna</a>
+          <a data-nav href="kontakt.html">Kontakt</a>
+          <span class="badge">CZ</span>
+          <a class="badge" href="en/calculators.html">EN →</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="h-title" style="font-size:34px;margin-top:8px;">Kalkulačky</h1>
+      <p class="h-sub">Rychlé orientační výpočty. Pro přesnost doplníme tarif, region a stálé platby.</p>
+
+      <div class="card pad">
+        <h2 style="margin-top:0">Kalkulačka nákladů elektřiny (orientačně)</h2>
+        <form class="form">
+          <div>
+            <label class="small" for="kwh">Roční spotřeba (kWh)</label>
+            <input class="input" id="kwh" type="number" min="0" step="1" placeholder="např. 2500" />
+          </div>
+          <div>
+            <label class="small" for="price">Cena za kWh (Kč)</label>
+            <input class="input" id="price" type="number" min="0" step="0.01" placeholder="např. 4.50" />
+          </div>
+          <div>
+            <label class="small" for="months">Rozpočítat na (měsíců)</label>
+            <input class="input" id="months" type="number" min="1" step="1" value="12" />
+          </div>
+          <button id="calcBtn" class="btn primary">Spočítat</button>
+          <div id="calcOut"></div>
+          <p class="hint">Pozn.: Jde o orientační výpočet bez stálých plateb a distribučních složek. Pro přesnější výsledek napište nám.</p>
+        </form>
+      </div>
+
+      <div class="grid3" style="margin-top:14px;">
+        <div class="feature">
+          <div class="icon">🧠</div>
+          <b>Chystáme</b>
+          <p>Kalkulačku plynu, stálých plateb a srovnání fixace vs. spot.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">📌</div>
+          <b>Doporučení</b>
+          <p>Uložte si spotřebu (VT/NT) a distribuční sazbu — výrazně to zpřesní výstupy.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">✉️</div>
+          <b>Potřebujete přesněji?</b>
+          <p>Pošlete údaje z faktury a uděláme orientační model včetně poplatků.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© <span id="y"></span> Energetické poradenství • <a href="mailto:info@enpo.cz">info@enpo.cz</a></div>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
