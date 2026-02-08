@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Srovnání | Energetické poradenství</title>
+  <meta name="description" content="Jak správně porovnávat nabídky energií: cena, stálé platby, fixace, sankce a podmínky ceníku." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html"><span class="logo"></span><span>Energetické poradenství</span></a>
+        <div class="navlinks">
+          <a data-nav href="sluzby.html">Služby</a>
+          <a data-nav href="kalkulacky.html">Kalkulačky</a>
+          <a data-nav href="srovnani.html">Srovnání</a>
+          <a data-nav href="poradna.html">Poradna</a>
+          <a data-nav href="kontakt.html">Kontakt</a>
+          <span class="badge">CZ</span>
+          <a class="badge" href="en/comparison.html">EN →</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="h-title" style="font-size:34px;margin-top:8px;">Srovnání</h1>
+      <p class="h-sub">Ukázkový rámec, jak porovnávat nabídky. Konkrétní výpočty doplníme podle tarifu a regionu.</p>
+
+      <div class="card pad">
+        <h2 style="margin-top:0">Na co si dát pozor</h2>
+        <table class="table" aria-label="Srovnání parametrů">
+          <thead>
+            <tr>
+              <th>Parametr</th>
+              <th>Proč je důležitý</th>
+              <th>Typické riziko</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Cena za kWh / m³</b></td>
+              <td>Hlavní složka nákladů.</td>
+              <td>“Nízká cena” může být dočasná nebo podmíněná (akce, omezení).</td>
+            </tr>
+            <tr>
+              <td><b>Stálé platby</b></td>
+              <td>Platíte i při nízké spotřebě.</td>
+              <td>Vyšší paušál zhorší výsledek při malé spotřebě.</td>
+            </tr>
+            <tr>
+              <td><b>Fixace a sankce</b></td>
+              <td>Určuje flexibilitu změny dodavatele.</td>
+              <td>Sankce při předčasném ukončení nebo automatické prodloužení.</td>
+            </tr>
+            <tr>
+              <td><b>Podmínky ceníku</b></td>
+              <td>Co se děje po skončení akce/fixace.</td>
+              <td>Přechod na dražší produkt bez aktivního potvrzení.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="cta-row" style="margin-top:12px;">
+          <a class="btn primary" href="kontakt.html">Pošlete nabídky k porovnání</a>
+          <a class="btn" href="poradna.html">Poradna</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© <span id="y"></span> Energetické poradenství • <a href="mailto:info@enpo.cz">info@enpo.cz</a></div>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
