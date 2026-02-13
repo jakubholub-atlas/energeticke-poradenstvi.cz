@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ochrana soukromí – Energetické poradenství</title>
+  <meta name="robots" content="noindex,follow" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="./index.html">
+        <span class="brand__mark" aria-hidden="true"><img src="./assets/logo.svg" alt="" /></span>
+        <span class="brand__text">
+          <span class="brand__name">Energetické poradenství</span>
+          <span class="brand__tag">AI • Inovace • Stabilita</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Hlavní navigace">
+        <a href="./index.html#kontakt">Kontakt</a>
+        <a class="btn btn--ghost" href="./index.html">Zpět</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Ochrana soukromí</h2>
+        <p>Toto je jednoduchá šablona. Doplň si ji podle toho, jak budeš reálně zpracovávat data (formulář, analytika, cookies).</p>
+      </div>
+
+      <div class="card">
+        <h3>Jaké údaje zpracováváme</h3>
+        <p>Z formuláře zpracováváme údaje, které uvedeš (jméno/firma, email, telefon, zpráva) výhradně za účelem vyřízení poptávky.</p>
+
+        <h3>Právní základ</h3>
+        <p>Oprávněný zájem / jednání o smlouvě (vyřízení poptávky). U prémiové poradny může být základ doplněn smlouvou.</p>
+
+        <h3>Doba uchování</h3>
+        <p>Po dobu nezbytně nutnou k vyřízení poptávky a případné následné komunikaci.</p>
+
+        <h3>Příjemci</h3>
+        <p>Standardně nikdo další. Pokud doplníme odesílání přes službu typu Formspree/Netlify, bude uvedeno zde.</p>
+
+        <h3>Tvá práva</h3>
+        <p>Máš právo na přístup, opravu, výmaz, omezení zpracování a námitku. V případě dotazů napiš na email uvedený na webu.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <p class="small">© <span id="year"></span> Energetické poradenství</p>
+      </div>
+      <div class="footer__right">
+        <a href="./index.html">Domů</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
