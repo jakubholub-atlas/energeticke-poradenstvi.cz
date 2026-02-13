@@ -1,133 +1,530 @@
 <!doctype html>
 <html lang="cs">
 <head>
-  <link rel="stylesheet" href="assets/styles.css" />
-<script defer src="assets/app.js"></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Energetická poradna | Váš osobní rádce ve světě energií</title>
-  <meta name="description" content="Komplexní energetické poradenství: kalkulačky, srovnání, výpočty, poradna a prodej energií. Moderní a srozumitelně." />
-  <link rel="stylesheet" href="assets/styles.css" />
-  <script defer src="assets/app.js"></script>
+  <title>Energetické poradenství – AI přístup, důvěra a stabilita</title>
+  <meta name="description" content="Moderní energetické poradenství pro domácnosti i firmy. Rychlé vyhodnocení faktury, kalkulačka úspor a jasné doporučení dalšího postupu." />
+  <link rel="canonical" href="https://energeticke-poradenstvi.cz/" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Energetické poradenství – AI přístup, důvěra a stabilita" />
+  <meta property="og:description" content="Vyhodnocení faktury, kalkulačka úspor a doporučení. Moderně, srozumitelně a férově." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://energeticke-poradenstvi.cz/" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./script.js"></script>
+
+  <!-- Organization schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Energetické poradenství",
+    "url":"https://energeticke-poradenstvi.cz/",
+    "logo":"https://energeticke-poradenstvi.cz/assets/logo.svg",
+    "sameAs":[]
+  }
+  </script>
 </head>
+
 <body>
-  <header class="topbar">
-    <div class="container">
-      <nav class="nav">
-        <a class="brand" href="index.html">
-          <span class="logo" aria-hidden="true"></span>
-          <span>Energetická poradna</span>
-        </a>
-        <div class="navlinks">
-          <a data-nav href="sluzby.html">Služby</a>
-          <a data-nav href="kalkulacky.html">Kalkulačky</a>
-          <a data-nav href="srovnani.html">Srovnání</a>
-          <a data-nav href="poradna.html">Poradna</a>
-          <a data-nav href="kontakt.html">Kontakt</a>
-          <span class="badge">CZ</span>
-          <a class="badge" href="en/index.html" title="English version">EN →</a>
-        </div>
+  <a class="skip" href="#main">Přeskočit na obsah</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#">
+        <span class="brand__mark" aria-hidden="true">
+          <img src="./assets/logo.svg" alt="" />
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">Energetické poradenství</span>
+          <span class="brand__tag">AI • Inovace • Stabilita</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Hlavní navigace">
+        <a href="#sluzby">Služby</a>
+        <a href="#kalkulacka">Kalkulačka</a>
+        <a href="#jak-to-funguje">Jak to funguje</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn--ghost" href="#kontakt">Kontakt</a>
       </nav>
+
+      <button class="burger" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" hidden>
+      <div class="container mobileNav__inner">
+        <a href="#sluzby">Služby</a>
+        <a href="#kalkulacka">Kalkulačka</a>
+        <a href="#jak-to-funguje">Jak to funguje</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn--primary" href="#kontakt">Kontakt</a>
+      </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
+    <!-- HERO -->
     <section class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div>
-            <h1 class="h-title">Váš osobní rádce ve světě energetiky</h1>
-            <p class="h-sub">
-              Energetická poradna pro domácnosti i firmy: <b>komplexní poradenství</b>, praktické <b>výpočty</b>, <b>kalkulačky</b>,
-              <b>srovnání</b> nabídek a pomoc s orientací v cenách, tarifech a smlouvách.
-            </p>
-            <div class="cta-row">
-              <a class="btn primary" href="kontakt.html">Napsat dotaz</a>
-              <a class="btn" href="kalkulacky.html">Spustit kalkulačky</a>
-              <a class="btn" href="srovnani.html">Porovnat nabídky</a>
-            </div>
-
-            <div class="kpis">
-              <div class="kpi">
-                <div class="n">Rychle</div>
-                <div class="t">srozumitelný výstup</div>
-              </div>
-              <div class="kpi">
-                <div class="n">Komplexně</div>
-                <div class="t">od smluv po úspory</div>
-              </div>
-              <div class="kpi">
-                <div class="n">Prakticky</div>
-                <div class="t">kalkulace a porovnání</div>
-              </div>
-            </div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <div class="pill">
+            <span class="dot"></span>
+            <span>Moderní poradenství pro energie</span>
           </div>
 
-          <aside class="card pad">
-            <h3>Co tu najdete</h3>
-            <p class="small">
-              • Energetické poradenství a konzultace<br/>
-              • Výpočty spotřeby a nákladů<br/>
-              • Srovnání dodavatelů a produktů<br/>
-              • Poradna (FAQ) a průvodce smlouvami<br/>
-              • Prodej energií (orientačně, transparentně)
-            </p>
-            <hr class="sep"/>
-            <div class="pill">✅ Transparentní přístup</div>
-            <div class="pill" style="margin-top:8px;">🧮 Kalkulačky pro rychlou orientaci</div>
-            <div class="pill" style="margin-top:8px;">🧾 Kontrola smluv a rizik</div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2>Jak vám pomůžeme</h2>
-        <div class="grid3">
-          <div class="feature">
-            <div class="icon">⚡</div>
-            <b>Komplexní poradenství</b>
-            <p>Domácnosti i firmy: ceny, tarify, fixace, smluvní podmínky, odhad dopadů.</p>
-          </div>
-          <div class="feature">
-            <div class="icon">🧮</div>
-            <b>Kalkulačky a výpočty</b>
-            <p>Rychlé orientační propočty nákladů, srozumitelné výstupy a další kroky.</p>
-          </div>
-          <div class="feature">
-            <div class="icon">🛡️</div>
-            <b>Srovnání a rizika</b>
-            <p>Upozornění na “háčky” smluv, sankce, stálé platby a podmínky dodavatelů.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="card pad">
-          <h2 style="margin-top:0">Rychlý start</h2>
-          <p class="small">
-            Nevíte, kde začít? Odpovězte si na 3 otázky: (1) domácnost nebo firma, (2) elektřina, plyn nebo obojí,
-            (3) znáte roční spotřebu v kWh / m³? Pak už zvládneme zbytek.
+          <h1>Jasno v energiích díky <span class="grad">AI</span>, bez zbytečných slov.</h1>
+          <p class="lead">
+            Domácnosti i firmy: zhodnotíme fakturu, porovnáme možnosti, navrhneme konkrétní další krok.
+            Férově, srozumitelně a s důrazem na stabilitu.
           </p>
-          <div class="cta-row">
-            <a class="btn primary" href="poradna.html">Otevřít poradnu</a>
-            <a class="btn" href="kontakt.html">Kontaktovat emailem</a>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#kontakt">Chci nezávazné vyhodnocení</a>
+            <a class="btn btn--ghost" href="#kalkulacka">Spočítat orientační úsporu</a>
           </div>
+
+          <div class="trust">
+            <div class="trust__item">
+              <span class="trust__num">24h</span>
+              <span class="trust__lbl">rychlá reakce</span>
+            </div>
+            <div class="trust__item">
+              <span class="trust__num">0 Kč</span>
+              <span class="trust__lbl">nezávazná konzultace</span>
+            </div>
+            <div class="trust__item">
+              <span class="trust__num">✔</span>
+              <span class="trust__lbl">vysvětlení bez “energetičtiny”</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-label="Ukázka výstupu">
+          <div class="glass">
+            <div class="glass__top">
+              <span class="badge">AI analýza</span>
+              <span class="badge badge--muted">Doporučení</span>
+              <span class="badge badge--muted">Kontrola smlouvy</span>
+            </div>
+
+            <div class="glass__body">
+              <div class="metric">
+                <div class="metric__k">Potenciál úspory</div>
+                <div class="metric__v" id="heroSavings">—</div>
+              </div>
+
+              <div class="steps">
+                <div class="step">
+                  <div class="step__n">1</div>
+                  <div class="step__t">Zadáš spotřebu a cenu</div>
+                </div>
+                <div class="step">
+                  <div class="step__n">2</div>
+                  <div class="step__t">AI porovná scénáře</div>
+                </div>
+                <div class="step">
+                  <div class="step__n">3</div>
+                  <div class="step__t">Dostaneš jasné doporučení</div>
+                </div>
+              </div>
+
+              <div class="mini">
+                <div class="mini__row">
+                  <span>Elektřina / plyn</span><span class="mono">domácnost i firma</span>
+                </div>
+                <div class="mini__row">
+                  <span>Výstup</span><span class="mono">PDF + shrnutí</span>
+                </div>
+                <div class="mini__row">
+                  <span>Důraz</span><span class="mono">stabilita & rizika</span>
+                </div>
+              </div>
+
+              <div class="note">
+                * Ukázka je ilustrativní. Konkrétní doporučení závisí na tarifu, spotřebě, sazbě a podmínkách smlouvy.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg" aria-hidden="true">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="grid"></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="sluzby">
+      <div class="container">
+        <div class="section__head">
+          <h2>S čím pomůžeme</h2>
+          <p>Moderně, ale srozumitelně. Vždy dostaneš konkrétní doporučení a jasné další kroky.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Kontrola faktury a smlouvy</h3>
+            <p>Odhalíme nesrovnalosti, zbytečné poplatky a rizikové podmínky. Vysvětlíme, co je důležité.</p>
+            <ul>
+              <li>kontrola ceny a indexací</li>
+              <li>výpovědní lhůty a fixace</li>
+              <li>přehled, co platíš a proč</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Optimalizace tarifu a sazby</h3>
+            <p>Navrhneme vhodnější nastavení podle spotřeby a provozu (domácnost i podnikání).</p>
+            <ul>
+              <li>VT/NT režimy a sazby</li>
+              <li>rezervovaný příkon</li>
+              <li>průběh spotřeby</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>AI scénáře a doporučení</h3>
+            <p>Porovnáme scénáře: stabilita vs. flexibilita. Zohledníme rizika a preferenci jistoty.</p>
+            <ul>
+              <li>citlivost na cenu</li>
+              <li>rizikové limity</li>
+              <li>jasné “proč” doporučení</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Prémiová poradna</h3>
+            <p>Pro složitější případy: podniky, více odběrných míst, FVE, tepelka, změny sazeb, revize.</p>
+            <ul>
+              <li>hloubkové poradenství</li>
+              <li>zpracování podkladů</li>
+              <li>konzultace a plán kroků</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="ctaBar">
+          <div>
+            <h3>Chceš rychlý první pohled zdarma?</h3>
+            <p>Pošli základní údaje a ozveme se s návrhem dalšího postupu.</p>
+          </div>
+          <a class="btn btn--primary" href="#kontakt">Začít</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALCULATOR -->
+    <section class="section section--alt" id="kalkulacka">
+      <div class="container">
+        <div class="section__head">
+          <h2>Kalkulačka orientační úspory</h2>
+          <p>Rychlý odhad pro elektřinu nebo plyn. Pro přesnost uděláme vyhodnocení faktury.</p>
+        </div>
+
+        <div class="calc">
+          <div class="calc__form">
+            <div class="seg" role="tablist" aria-label="Typ komodity">
+              <button class="seg__btn is-active" data-commodity="electricity" role="tab" aria-selected="true">Elektřina</button>
+              <button class="seg__btn" data-commodity="gas" role="tab" aria-selected="false">Plyn</button>
+            </div>
+
+            <div class="grid2">
+              <label class="field">
+                <span>Roční spotřeba</span>
+                <div class="field__row">
+                  <input id="consumption" type="number" min="0" step="0.1" placeholder="např. 3.2" />
+                  <span class="unit" id="unit">MWh</span>
+                </div>
+              </label>
+
+              <label class="field">
+                <span>Aktuální cena (komodita)</span>
+                <div class="field__row">
+                  <input id="priceNow" type="number" min="0" step="1" placeholder="např. 3500" />
+                  <span class="unit">Kč/MWh</span>
+                </div>
+              </label>
+
+              <label class="field">
+                <span>Cílová cena (scénář)</span>
+                <div class="field__row">
+                  <input id="priceTarget" type="number" min="0" step="1" placeholder="např. 3000" />
+                  <span class="unit">Kč/MWh</span>
+                </div>
+              </label>
+
+              <label class="field">
+                <span>Preferuješ</span>
+                <select id="preference">
+                  <option value="stability" selected>Jistotu (fix)</option>
+                  <option value="balanced">Vyváženě</option>
+                  <option value="flex">Flexibilitu (spot)</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="calc__actions">
+              <button class="btn btn--primary" id="btnCalc">Spočítat</button>
+              <button class="btn btn--ghost" id="btnReset" type="button">Reset</button>
+            </div>
+
+            <p class="small">
+              Pozn.: Je to orientační výpočet z ceny komodity. Regulované složky a konkrétní podmínky smlouvy mohou výsledky změnit.
+            </p>
+          </div>
+
+          <div class="calc__result" aria-live="polite">
+            <div class="resultCard">
+              <h3>Výsledek</h3>
+
+              <div class="resultGrid">
+                <div class="resultBox">
+                  <div class="k">Odhad roční úspory</div>
+                  <div class="v mono" id="savings">—</div>
+                </div>
+                <div class="resultBox">
+                  <div class="k">Doporučený přístup</div>
+                  <div class="v" id="approach">—</div>
+                </div>
+                <div class="resultBox">
+                  <div class="k">Co zkontrolovat</div>
+                  <div class="v" id="checklist">—</div>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="next">
+                <h4>Chceš přesné vyhodnocení?</h4>
+                <p>Pošli nám základní údaje (spotřeba, cena, typ odběru). Ozveme se s návrhem kroků.</p>
+                <a class="btn btn--primary" href="#kontakt">Odeslat poptávku</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="jak-to-funguje">
+      <div class="container">
+        <div class="section__head">
+          <h2>Jak to funguje</h2>
+          <p>Krátce, jasně, bez zbytečných slibů.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="tItem">
+            <div class="tDot">1</div>
+            <div class="tBody">
+              <h3>Pošleš vstupy</h3>
+              <p>Spotřeba, cena, typ odběru. Pokud máš fakturu, stačí fotka nebo PDF.</p>
+            </div>
+          </div>
+          <div class="tItem">
+            <div class="tDot">2</div>
+            <div class="tBody">
+              <h3>Vyhodnotíme a porovnáme scénáře</h3>
+              <p>AI + kontrolní checklist: rizika, fixace, indexace, výpovědi, sazby, příkon.</p>
+            </div>
+          </div>
+          <div class="tItem">
+            <div class="tDot">3</div>
+            <div class="tBody">
+              <h3>Dostaneš doporučení</h3>
+              <p>Jednoznačné shrnutí + konkrétní kroky. Vždy víš “proč” a “co dál”.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="split">
+          <div class="panel">
+            <h3>Důvěra a stabilita</h3>
+            <p>Preferujeme řešení, která dávají smysl dlouhodobě – ne jen “nejnižší cenu dnes”.</p>
+            <ul>
+              <li>transparentní postup</li>
+              <li>vysvětlení rizik</li>
+              <li>bez nátlaku</li>
+            </ul>
+          </div>
+          <div class="panel panel--dark">
+            <h3>Inovace a AI</h3>
+            <p>Automatizujeme rutinu, aby zbyl čas na důležité: strategie a správné rozhodnutí.</p>
+            <ul>
+              <li>rychlé scénáře</li>
+              <li>konzistentní checklist</li>
+              <li>výstup pro rozhodnutí</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p>Nejčastější dotazy, které dostáváme.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Kolik to stojí?</summary>
+            <div class="faq__a">
+              <p>Nezávazná konzultace je zdarma. U složitějších případů (více odběrů, firmy, FVE/tepelko, revize sazeb) je k dispozici prémiová poradna – cenu vždy řekneme dopředu.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Potřebujete moji fakturu?</summary>
+            <div class="faq__a">
+              <p>Pro orientační odhad stačí spotřeba a cena. Pro přesné vyhodnocení je faktura nejlepší (PDF nebo fotka).</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Umíte řešit i firmy?</summary>
+            <div class="faq__a">
+              <p>Ano. U firem se často vyplatí řešit sazbu, příkon, průběh spotřeby a smluvní podmínky detailněji.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Je AI “automat”, který rozhodne za mě?</summary>
+            <div class="faq__a">
+              <p>Ne. AI používáme jako rychlou analytiku a konzistentní checklist. Rozhodnutí je vždy na tobě a vše vysvětlíme srozumitelně.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="kontakt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Kontakt</h2>
+          <p>Pošli poptávku – ozveme se do 24 hodin.</p>
+        </div>
+
+        <div class="contact">
+          <form class="form" id="contactForm">
+            <div class="grid2">
+              <label class="field">
+                <span>Jméno / firma</span>
+                <input name="name" required placeholder="Např. Novák / Firma s.r.o." />
+              </label>
+
+              <label class="field">
+                <span>Email</span>
+                <input name="email" type="email" required placeholder="např. jana@firma.cz" />
+              </label>
+
+              <label class="field">
+                <span>Telefon (volitelné)</span>
+                <input name="phone" placeholder="+420 ..." />
+              </label>
+
+              <label class="field">
+                <span>Typ</span>
+                <select name="type">
+                  <option>Domácnost</option>
+                  <option>Podnikatel / firma</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="field">
+              <span>Co potřebuješ řešit?</span>
+              <textarea name="message" rows="5" placeholder="Napiš pár vět – spotřeba, cena, fixace, problém, cíl..."></textarea>
+            </label>
+
+            <div class="form__row">
+              <label class="check">
+                <input type="checkbox" required />
+                <span>Souhlasím se zpracováním údajů pro účely vyřízení poptávky.</span>
+              </label>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">Odeslat poptávku</button>
+              <a class="btn btn--ghost" href="./privacy.html">Ochrana soukromí</a>
+            </div>
+
+            <p class="small" id="formNote">
+              Formulář je teď nastavený tak, že otevře emailový klient (bez serveru). Až budeš chtít, doplníme odesílání přes Formspree / Netlify Forms.
+            </p>
+          </form>
+
+          <aside class="side">
+            <div class="sideCard">
+              <h3>Rychlý kontakt</h3>
+              <p class="small">Doplň si kontakty:</p>
+
+              <div class="kv">
+                <div class="kv__k">Email</div>
+                <div class="kv__v mono" id="contactEmail">info@energeticke-poradenstvi.cz</div>
+              </div>
+              <div class="kv">
+                <div class="kv__k">Telefon</div>
+                <div class="kv__v mono">+420 XXX XXX XXX</div>
+              </div>
+
+              <div class="divider"></div>
+
+              <h4>Co poslat, aby to bylo rychlé</h4>
+              <ul>
+                <li>roční spotřeba (MWh)</li>
+                <li>aktuální cena / fixace</li>
+                <li>typ odběru (domácnost/firma)</li>
+                <li>faktura (ideálně PDF)</li>
+              </ul>
+            </div>
+
+            <div class="sideCard sideCard--muted">
+              <h3>Chceš premium?</h3>
+              <p>Pro složité případy, více odběrných míst, technické změny sazeb a detailní audit.</p>
+              <a class="btn btn--primary" href="#kontakt" id="premiumBtn">Zajímá mě Premium</a>
+              <p class="small">Do zprávy napiš: “Premium” a stručně problém.</p>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-row">
-        <div>© <span id="y"></span> Energetická poradna</div>
-        <div class="pill">📩 Dotazy: <a href="kontakt.html"><b>Kontakt</b></a></div>
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="brand brand--small">
+          <span class="brand__mark" aria-hidden="true"><img src="./assets/logo.svg" alt="" /></span>
+          <span class="brand__text">
+            <span class="brand__name">Energetické poradenství</span>
+            <span class="brand__tag">AI • Inovace • Stabilita</span>
+          </span>
+        </div>
+        <p class="small">© <span id="year"></span> Energetické poradenství. Všechna práva vyhrazena.</p>
       </div>
-      <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+
+      <div class="footer__right">
+        <a href="./privacy.html">Ochrana soukromí</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
     </div>
   </footer>
 </body>
